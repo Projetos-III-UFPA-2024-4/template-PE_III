@@ -1,8 +1,8 @@
 # Template LaTeX de Projetos De Engenharia III 
 
-Este repositório contém um documento LaTeX que serve de base para os relatórios de componente EC01027 - PROJETOS DE ENGENHARIA III da FCT na UFA. Neste README há um pequeno guia de como clonar esse template, compilar e fazer suas alterações.
+Este repositório contém um documento LaTeX que serve de base para os relatórios de componente EC01027 - PROJETOS DE ENGENHARIA III  ministrada no quinto semestre da [Faculdade de Engenharia da Computação e Telecomunicações](https://www.itec.ufpa.br/index.php?option=com_content&view=article&id=211:faculdade-de-engenharia-da-computacao-e-telecomunicacoes&catid=74&Itemid=114&lang=pt) da [Universidade Federal do Pará](https://ufpa.br/). Neste README há um pequeno guia de como clonar esse template, compilar e fazer suas alterações.
 
-Com o template clonado e com suas alterações realizadas o projeto pode ser _upado_ em um repositório de escolha da equipe para ser desenvolvido colaborativamente por todos integrantes, dessa forma, servindo de alternativa ao tradicional _Overleaf_ que recentemente impôs limites às contas gratuitas como limite de colaboradores e tempo de compilação de projeto.
+Com o template clonado e com suas alterações realizadas o projeto pode ser movido pra outro diretório e _upado_ em um repositório de escolha da equipe para ser desenvolvido colaborativamente por todos integrantes, dessa forma, servindo de alternativa ao tradicional _Overleaf_ que recentemente impôs limites às contas gratuitas como limite de colaboradores e tempo de compilação de projeto.
 
 Esta abordagem possui mais requisitos e uma curva de aprendizado maior porém bastante útil para projetos futuros.
 
@@ -75,7 +75,7 @@ No VS code abra o terminal no diretório que desejar (Atalho `Ctrl+J`) e:
 
 ## Estrutura do Projeto
 ```sh
-<template-PE_III>/
+template-PE_III/
 ├── .vscode/                    # Diretório contendo configurações específicas do Visual Studio Code.       
 │   └── tasks.json              # Arquivo de configuração de tarefas para automatizar a compilação do projeto LaTeX.
 ├── sections/                   # Diretório contendo os arquivos das seções do documento.
