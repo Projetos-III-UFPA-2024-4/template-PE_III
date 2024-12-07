@@ -65,8 +65,8 @@ No VS code abra o terminal no diretório que desejar (Atalho `Ctrl+J`) e:
 
 1. **Clone o repositório**:
    ```sh
-   git clone <URL-do-repositorio>
-   cd <nome-do-repositorio>
+   git clone https://github.com/Projetos-III-UFPA-2024-4/template-PE_III.git
+   cd template-PE_III
    ```
 
 2. **Abra o projeto no Visual Studio Code**: 
