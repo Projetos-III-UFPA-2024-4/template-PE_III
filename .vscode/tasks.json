@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile with LuaLaTeX",
+            "type": "shell",
+            "command": "lualatex",
+            "args": [
+                "main.tex"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "dependsOn": ["Run Biber"]
+        },
+        {
+            "label": "Run Biber",
+            "type": "shell",
+            "command": "biber",
+            "args": [
+                "main"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

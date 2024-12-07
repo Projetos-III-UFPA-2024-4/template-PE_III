@@ -1,0 +1,39 @@
+# Arquivos de saída do LaTeX
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.fdb_latexmk
+*.snm
+*.synctex.gz
+*.nav
+*.vrb
+*.bcf
+*.run.xml
+
+
+# Arquivos de saída do LuaLaTeX
+*.pdf
+
+# Arquivos temporários do editor
+*~
+*.swp
+*.bak
+*.backup
+*.tmp
+*.temp
