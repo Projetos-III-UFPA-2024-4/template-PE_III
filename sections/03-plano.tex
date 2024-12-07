@@ -1,0 +1,171 @@
+\subsection{Materiais e Métodos}
+
+\textcolor{red}{Aqui deve-se informar como a equipe pretende executar o projeto. Algumas perguntas que deveriam estar respondidas nesta seção são: “Quais os conjuntos de passos que serão usados para o desenvolvimento do projeto?”, “Qual a organização sistemática das ações?”, “Como a equipe pretende avaliar o andamento do projeto continuamente (reuniões periódicas, por e-mail, grupo de e-mail, etc)?”, }
+
+\textcolor{red}{Certamente, no momento da escrita deste documento a equipe ainda possuirá um bom número de dúvidas à respeito de como o projeto será executado. Contudo, o planejamento serve exatamente para remover estas dúvidas. Procure antecipar o máximo das decisões. Exemplo, se vai usar um certo conjunto de dados, procure definir e explicar, em detalhes, quais as características deste conjunto de dados. Se vai usar uma API, explique como ela funciona e como se encaixará no projeto.}
+
+\textcolor{red}{As escolhas de métodos e materiais devem vir acompanhadas de justificativas. Por que você pretende usar uma plataforma de prototipação de hardware Y e não a X? Ou porque você pretende usar a linguagem de programação X e não Y}
+
+\textcolor{red}{Atente-se que esta seção não é desligada da Seção \ref{sec:problema}, portanto tente encadeá-la de modo a mostrar que o método levará ao desenvolvimento da solução.}
+
+\textcolor{red}{Em alguns casos, talvez você já saiba que vai empregar determinado algoritmo. Então você pode documentá-lo nesta seção da seguinte forma. Como no Algoritmo \ref{alg:level0}.}
+
+\begin{algorithm}[hbt!]
+\caption{Level 0 update}\label{alg:level0}
+\KwData{The VNF list and flow entry list to be placed}
+\KwResult{Update the network}
+
+\For{each VNF}{
+update physical node capacity according to requirements of the VNF that was placed at it
+\label{line:update-resources-nodes}
+
+store information in database
+}
+
+\For{each flow entry}{
+update physical link capacity according to the bandwidth requirements of the flow entry that was just placed
+\label{line:update-resources-links}
+
+store information in database
+}
+\end{algorithm}
+
+\textcolor{red}{Lembre-se que você deve comentar qualquer artefato que venha a adicionar no texto seja uma figura, tabela ou algoritmo. Se quiser, no caso dos algoritmos, pode inclusive referenciar linhas, como as linhas \ref{line:update-resources-nodes} e \ref{line:update-resources-links}.}
+
+\subsection{Escopo e \textit{Work Packages}}
+
+\textcolor{red}{Para o desenho do Escopo é sugerido que o primeiro passo seja definir as entregas criando a Estrutura Analítica do Projeto (EAP), também conhecida pelo termo em inglês, \textit{Work Breakdown Structure} (WBS). Uma EAP é um processo de subdivisão das entregas e do trabalho do projeto em componentes menores e mais facilmente gerenciáveis, geralmente chamados de módulos, pacotes de trabalho, ou \textit{Work Packages}. É útil para alinhar o entendimento do projeto e integrar todas as áreas.}
+
+\textcolor{red}{O foco básico de um pacote de trabalho ou atividade é nas entregas. Qual o artefato esperado nesta atividade? E neste pacote de trabalho, o que esperamos construir nele? Artefatos podem ser relatórios, vídeos, código, esquemas, circuitos etc. Tenha isso em mente conforme determina as atividades de seu projeto.}
+
+\textcolor{red}{A EAP deve ser completa, organizada e subdivida o suficiente para tornar possível a medição do progresso, mas não detalhada o suficiente para se tornar, ela mesma, um obstáculo à realização do projeto.}
+
+\textcolor{red}{Cada WP deve ter um objetivo claro, atividades e entregáveis bem definidos. A partir da definição dos objetivos e entregáveis, é necessário estabelecer as atividades necessárias de cada WP para realizá-las.}
+
+\textcolor{red}{Abaixo oferecemos exemplos de WPs para o caso do radar.}
+
+\begin{longtable}{p{\textwidth}}
+% pairs: absolute number (percentage)
+\toprule%
+\myrowcolour%
+\bfseries WP1: Avaliação preliminar e compra de materiais \\
+\midrule
+\textbf{Objetivo}: Avaliar formas de monitorar a velocidade com auxílio de sinalizadores e captura de imagens. Após a análise preliminar, pretende-se comprar os componentes necessários para implementação dos algoritmos e sistemas propostos.\\
+\midrule
+\myrowcolour%
+\bfseries Entregáveis \\
+\midrule
+\textbf{E1.1}: lista de algoritmos e sistemas para implementar o produto proposto. \\
+\textbf{E1.2}: lista de materiais necessários e sistemas para implementar o produto proposto. \\
+\midrule
+\myrowcolour%
+\bfseries Atividades \\
+\midrule
+\textbf{A1.1}: Ler artigos, livros, blogs…. Para entender os detalhes para implementação do sistemas. \\
+\textbf{A1.2}: Buscar materiais necessários para implementação do sistema. \\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{p{\textwidth}}
+% pairs: absolute number (percentage)
+\toprule%
+\myrowcolour%
+\bfseries WP2: Interface com a câmera \\
+\midrule
+\textbf{Objetivo}: Entender como capturar as imagens de câmeras e entregá-las para um outro software processá-la.\\
+\midrule
+\myrowcolour%
+\bfseries Entregáveis \\
+\midrule
+\textbf{E2}: software ou biblioteca que permita a leitura de imagens da câmera. \\
+\midrule
+\myrowcolour%
+\bfseries Atividades \\
+\midrule
+\textbf{A2.1}: Ler documentação da câmera\\
+\textbf{A2.2}: Construir código para receber dados da câmera\\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{p{\textwidth}}
+% pairs: absolute number (percentage)
+\toprule%
+\myrowcolour%
+\bfseries WP3: Implementação do sistema de monitoramento de velocidade \\
+\midrule
+\textbf{Objetivo}: Implementação dos algoritmos.\\
+\midrule
+\myrowcolour%
+\bfseries Entregáveis \\
+\midrule
+\textbf{E3}: Sistema que calcula a velocidade dos carros com base no sistema de monitoramento. \\
+\midrule
+\myrowcolour%
+\bfseries Atividades \\
+\midrule
+\textbf{A3.1}: Desenvolvimento de sistema de captura de velocidade dos carros.\\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{p{\textwidth}}
+% pairs: absolute number (percentage)
+\toprule%
+\myrowcolour%
+\bfseries WP4: Acompanhamento, Integração, Instalação e testes em campo \\
+\midrule
+\textbf{Objetivo}: Integração de todas as partes do sistema e montagem em campo para realização de testes e eventuais ajustes.\\
+\midrule
+\myrowcolour%
+\bfseries Entregáveis \\
+\midrule
+\textbf{E4.1}: Sistema funcionando. \\
+\textbf{E4.2}: Relatório técnico descrevendo o sistema proposto. \\
+\midrule
+\myrowcolour%
+\bfseries Atividades \\
+\midrule
+\textbf{A4.1}: Acompanhamento e integração de todos os sistemas \\
+\textbf{A4.2}: Desenvolvimento de interface gráfica amigável para visualização dos dados monitorados \\
+\textbf{A4.3}: Escrita de relatório técnico descrevendo o sistema desenvolvido.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Cronograma}
+\textcolor{red}{Um cronograma de atividades deve ser estimado, a partir das atividades planejadas para cada work package. O cronograma deve estimar um tempo para cada atividade e seus pré-requisitos. A primeira etapa do cronograma é o planejamento e deve constar no cronograma.}
+
+\textcolor{red}{O cronograma também deve conter as datas das entregas de cada entregável.}
+
+\textcolor{red}{Abaixo oferecemos exemplo de um cronograma para o caso do radar. Observe que, neste caso, fazemos uso dos códigos que criamos anteriormente. O calendário está em semanas e os números abaixo dos meses indicam o dia do mês em que a semana começa.}
+
+\ganttset{%
+    calendar week text={%
+        \startday
+    }%
+}
+
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  x unit=0.20cm,
+  time slot format=isodate,
+  bar height=0.5,
+  inline,
+  bar/.append style={fill=gray!50, inner sep=0pt}
+  ]{2022-09-19}{2022-12-09}
+\gantttitlecalendar{year, month=name, week=1} \\
+
+\ganttbar{A1.1}{2022-09-19}{2022-10-16} 
+\ganttmilestone{E1.1}{2022-10-09} \\
+\ganttbar{A1.2}{2022-09-26}{2022-10-09} 
+\ganttmilestone{E1.2}{2022-10-09} \\
+\ganttbar{A2.1}{2022-10-03}{2022-10-30} \\
+\ganttbar{A2.2}{2022-10-17}{2022-11-06} 
+\ganttmilestone{E2}{2022-10-31} \\
+\ganttbar{A3.1}{2022-10-24}{2022-11-20} 
+\ganttmilestone{E3}{2022-11-20} \\
+\ganttbar{A4.1}{2022-09-19}{2022-12-09} 
+\ganttmilestone{E4.1}{2022-11-28} \\
+\ganttbar{A4.2}{2022-11-14}{2022-12-09}
+\ganttmilestone{E4.2}{2022-12-05} \\
+
+\end{ganttchart}

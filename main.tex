@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{enumerate}
+\usepackage{lipsum}
+\usepackage[final]{pdfpages}
+\usepackage[toc,page]{appendix}
+\usepackage{verbatimbox}
+\usepackage{multirow}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage[english,brazil]{babel}
+\usepackage{soul}
+\usepackage{pgfgantt}
+
+\usepackage[style=abnt]{biblatex}
+\addbibresource{referencias.bib}
+
+\usepackage{longtable}
+\usepackage{colortbl}%
+   \newcommand{\myrowcolour}{\rowcolor[gray]{0.925}}
+
+% \usepackage{pgfgantt}
+
+% \usepackage{listings,xcolor}
+% \lstset{
+%     string=[s]{"}{"},
+%     stringstyle=\color{blue},
+%     comment=[l]{:},
+%     commentstyle=\color{black},
+% }
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\input{defs}
+
+\usepackage{lipsum}
+
+%%%%%%%%%%%%%%%
+% Title Page
+\date{\today}
+%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Identificação}
+\label{sec:ident}
+\input{sections/01-identificacao}
+
+\newpage
+\section{Introdução}
+\label{sec:intro}
+\input{sections/02-introducao}
+
+\newpage
+\section{Plano de Execução}
+\label{sec:plano}
+\input{sections/03-plano}
+\newpage
+
+\textcolor{red}{Todo projeto de uma solução parte de conhecimento prévio para geração de algo novo, ou seja, todo projeto deveria ter um bom número de referências que apoiem a proposta. Referências podem ser artigos científicos e matérias de jornais que tragam dados que subsidiem o problema. Pode-se ainda citar artigos científicos que ilustrem o método a ser utilizado no desenvolvimento do projeto.}
+\printbibliography
+
+
+\end{document}
