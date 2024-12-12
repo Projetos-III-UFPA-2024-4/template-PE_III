@@ -12,8 +12,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": [],
-            "dependsOn": ["Run Biber"]
+            "problemMatcher": []
         },
         {
             "label": "Run Biber",
@@ -22,6 +21,7 @@
             "args": [
                 "main"
             ],
+            "group": "build",
             "problemMatcher": []
         }
     ]
